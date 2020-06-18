@@ -43,7 +43,7 @@ func main() {
 	klog.InitFlags(nil)
 
 	watchNamespace := flag.String("namespace", "", "Namespace that the controller watches to reconcile machine-api objects. If unspecified, the controller watches for machine-api objects across all namespaces.")
-	metricsAddr := flag.String("metrics-addr", ":8080", "The address the metric endpoint binds to.")
+	metricsAddr := flag.String("metrics-addr", ":8081", "The address the metric endpoint binds to.")
 	enableLeaderElection := flag.Bool("enable-leader-election", false, "Enable leader election for controller manager. Enabling this will ensure there is only one active controller manager.")
 	flag.Parse()
 
